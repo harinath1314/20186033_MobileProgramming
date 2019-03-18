@@ -9,19 +9,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/productid"
-                android:fontFamily="casual"
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/productid"-->
+                <!--android:fontFamily="casual"-->
 
-                />
+                <!--/>-->
             <!--<TextView-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content"-->
                 <!--android:id="@+id/description"-->
                 <!--android:fontFamily="casual"-->
                 <!--/>-->
+        <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
 
 
 

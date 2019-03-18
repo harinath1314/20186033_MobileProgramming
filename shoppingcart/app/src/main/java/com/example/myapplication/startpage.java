@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -48,24 +50,28 @@ public class startpage extends AppCompatActivity{
 
 
 
+        ArrayAdapter adapter = new ArrayAdapter<String>(thos
+                R.layout.activity_startpage, JA);
 
+        ListView listView = (ListView) findViewById(R.id.mobile_list);
+        listView.setAdapter(adapter);
 
-        //test dhamaka
-        for (int in = 0; in < this.JA.length()-2; in++){
-            try {
-                JSONObject productjsonobj = JA.getJSONObject(in);
-
-                product =  (String) productjsonobj.get("ProductId");
-                Log.e(TAG, "onCreate: " + productjsonobj );
-                Log.e(TAG, "onCreate: -------->"+product );
-
-
-//                productid.append(product+"\n\n\n");
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-        }
+//        //test dhamaka
+//        for (int in = 0; in < this.JA.length()-2; in++){
+//            try {
+//                JSONObject productjsonobj = JA.getJSONObject(in);
+//
+//                product =  (String) productjsonobj.get("ProductId");
+//                Log.e(TAG, "onCreate: " + productjsonobj );
+//                Log.e(TAG, "onCreate: -------->"+product );
+//
+//
+////                productid.append(product+"\n\n\n");
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//
+//        }
 
         setContentView(R.layout.activity_startpage);
 
